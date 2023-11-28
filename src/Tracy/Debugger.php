@@ -480,7 +480,7 @@ class Debugger
 		if (!self::$bar) {
 			self::$bar = new Bar;
 			self::$bar->addPanel($info = new DefaultBarPanel('info'), 'Tracy:info');
-			$info->cpuUsage = self::$cpuUsage;
+			//$info->cpuUsage = self::$cpuUsage;
 			self::$bar->addPanel(new DefaultBarPanel('errors'), 'Tracy:errors'); // filled by errorHandler()
 		}
 		return self::$bar;
